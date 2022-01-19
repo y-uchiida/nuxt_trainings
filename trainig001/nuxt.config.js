@@ -17,6 +17,19 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+
+  modules: [
+    '@nuxtjs/axios', /* import axios module */
+  ],
+  axios: {},
+
+  plugins: [
+    '~/plugins/axios.js'
+  ],
+  env: {
+    QIITA_TOKEN: process.env.QIITA_TOKEN
+  },
+
   /*
   ** Build configuration
   */
